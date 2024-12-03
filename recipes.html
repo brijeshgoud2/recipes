@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Recipe Finder</h1>
+      <input type="text" id="search" placeholder="Search for recipes...">
+      <select id="cuisine">
+        <option value="">All Cuisines</option>
+        <option value="northindia">North India</option>
+        <option value="Southindia">South India</option>
+        <option value="Telangana">Telangana</option>
+        <!-- Add more cuisines here -->
+      </select>
+      <button onclick="getRecipes()">Search</button>
+    </header>
+
+    <div id="recipe-container">
+      <!-- Recipes will be displayed here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
